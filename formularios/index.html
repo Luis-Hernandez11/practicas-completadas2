@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script language="javascript" type="text/javascript" src="js/validacion.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>UNIVERSIDAD ICEL, UI</h1>
+        <h2>PROGRAMACION EN LA RED MUNDIAL</h2>
+        <h4>PROF. MINOR JAIME</h4>
+        <h4>ALUMNO: HERNANDEZ MUÑOZ LUIS JORGE</h4>
+        <h4>PRACTICA</h4>
+    </header>
+
+    <h1>FORMULARIO</h1>
+
+    <form class="form" action="" method="get" name="formulario" onsubmit=" return validar(this)">
+        <p>Formulario de registro basico</p>
+        <h1>favor de llenar el formulario</h1>
+        <br> Nombre: <input type="text" id="nombre" name="nombre" size="20" required>
+        <br>
+        <br>Edad: <input type="number" min="00" max="99" name="edad" required>
+        <br>
+        <br>Correo:<input type="email" name="correo" size="30" required>
+        <br>
+        <br>Fecha:
+        <input type="number" min="00" max="31" id="d" name="d" value="" placeholder="dd" size="30" required onclick="fechas()">
+        <input type="number" min="00" max="12" id="m" name="m" value="" placeholder="mm" size="30" required onclick="fechas()">
+        <input type="number" min="1920" max="9999" id="a" name="a" value="" placeholder="yyyy" size="30" required onclick="fechas()">
+        <br>
+        <br>
+        <input type="submit" value="Enviar datos" name="enviar">
+        <input type="resert" value="Borrar datos" name="borrar">
+    </form>
+
+    <hr>
+
+    <H1>PORCENTAJE HOMBRES/MUJERES</H1>
+    <div class="form">
+        Numero de Hombres:
+        <input type="number" value="" placeholder="N° de hombres" id="masculino"><br><br> Numero de Mujeres:
+        <input type="number" value="" placeholder="N° de mujeres" id="femenino"><br><br> Numero de Hombres:
+        <div id="h_porcentaje"></div><br><br> Numero de Mujeres:
+        <div id="m_porcentaje"></div><br><br>
+        <input type="button" value="Calcular" onclick="calcular()">
+
+    </div>
+    <hr>
+    <H1>CALCULAR EDAD</H1>
+    <div class="form">
+        Digite su año de nacimiento:<br><br>
+        <input type="number" value="" id="date"><br>
+        <br> EDAD:<br>
+        <div id="edad"></div>
+        <input type="button" value="Calcular" onclick="calcularEdad()">
+    </div>
+
+    <footer>
+        Creado por: Luis Hernández &copy;
+    </footer>
+
+</body>
+
+</html>

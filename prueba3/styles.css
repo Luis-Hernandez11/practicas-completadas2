@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #3f3f3f;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#global {
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 25px;
+    padding: 20px;
+    background: rgb(223, 223, 223);
+    box-shadow: 0px 0px 2px gray;
+}
+
+#logo {
+    font-family: Helvetica, Arial;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    text-align: center;
+    height: 80px;
+    width: 450px;
+    margin-bottom: 20px;
+    float: left;
+    background: rgb(177, 177, 177);
+    color: white;
+}
+
+#datos {
+    color: black;
+    width: 31%;
+    font-family: Helvetica, Arial;
+    float: right;
+    margin-right: 10%;
+}
+
+#datos span {
+    color: gray;
+}
+
+#experiencia {
+    color: black;
+    width: 32.5%;
+    font-family: helvetica, Arial;
+    float: left;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-left: 5%;
+}
+
+#experiencia a {
+    color: rgb(19, 101, 139);
+}
+
+#experiencia ul {
+    list-style: none;
+}
